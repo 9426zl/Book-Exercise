@@ -11,7 +11,7 @@ def Cel_to_Fah(ce):
 
 Tep = raw_input("Enter the number to choose what you want\n \
 1: Fahrenheit Temperature to Celsius Temperature;\n \
-2: Celsius Temperature to Fahrenheit Temperature.")
+2: Celsius Temperature to Fahrenheit Temperature.\n")
 if Tep == 1:
     fa = raw_input("Please enter the Fahrenheit Temperature:")
     Fah_to_Cel(fa)
