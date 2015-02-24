@@ -19,7 +19,8 @@ def sort_list(keys, stolist):
     del title[n]
     print "%15s%15s%15s" % (title[0], title[1], title[2])
     for key in key_s2:
-        print "%15s%15s%15s%15s" % (key, stolist_s.get(key)[0],stolist_s.get(key)[1], stolist_s.get(key)[2])
+        print "%15s%15s%15s%15s" % (key, stolist_s.get(key)[0],
+                                    stolist_s.get(key)[1], stolist_s.get(key)[2])
     #print stolist_s
     #print sorted_list
 
