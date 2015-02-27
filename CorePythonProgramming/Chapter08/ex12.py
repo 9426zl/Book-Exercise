@@ -21,7 +21,7 @@ def dec_to_ascii(n):
 in_bv = int(raw_input("Please entry begin value:"))
 in_ev = int(raw_input("Please entry end value:"))
 print "DEC     BIN     OCT     HEX     ASCII"
-print "_____________________________________"
+print "_"*40
 for i in range(in_bv, in_ev+1):
     print "%-8s%-8s%-8s%-8s%-8s" % \
           (i, dec_to_bin(i),dec_to_oct(i),\
