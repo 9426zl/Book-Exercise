@@ -1,3 +1,5 @@
+"""Display all line of a file,except
+those that start with a pound sign."""
 
 f = open('a.txt', 'r')
 i = 0
