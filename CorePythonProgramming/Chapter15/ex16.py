@@ -21,10 +21,11 @@ for j in range(longer): # create domain
     dn += choice(lowercase)
 
 si = dtstr+ '::' + em + '@' + dn + '.'+ choice(doms) + '::' \
-     + 'dtint' + '-'+ 'shorter' + '-'+ 'longer'
+     + str(dtint) + '-'+ str(shorter) + '-'+ str(longer)
 
 print '%s' % si
 
 f = open('redata.txt', 'a')
 f.write(si)
+f.write('\n')
 f.close()
