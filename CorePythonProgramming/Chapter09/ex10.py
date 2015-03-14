@@ -1,9 +1,6 @@
-import os, random, struct, string
-
 from Tkinter import *
 import tkMessageBox
 import xlrd
-import xlwt
 from xlutils.copy import copy
 
 
