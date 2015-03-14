@@ -7,6 +7,7 @@ import os
 
 f = open('redata.txt')
 cont = f.read()
+f.close()
 
 patt1 = 'Sun'
 patt2 = 'Mon'
