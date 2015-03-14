@@ -1,3 +1,8 @@
+"""
+Update the code for gendata.py so that the data
+are written directly to redata.txtrather than
+output to the screen.
+"""
 from random import randint, choice
 from string import lowercase
 from sys import maxint
