@@ -61,3 +61,5 @@ CorePythonProgramming/Chapter09/a.txt
 CorePythonProgramming/Chapter09/a.txt
 CorePythonProgramming/ex.py
 *.xls
+*.exe
+*.obj
