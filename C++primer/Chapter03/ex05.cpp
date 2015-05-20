@@ -5,8 +5,11 @@ using namespace::std;
 
 int main()
 {
-	string s1, s2, s3;
+	string s, word;
 
-	cin >> s1 >> s2 >> s3;
-	cout << s1 + " " + s2 + " " + s3;
+	while(cin >> word)
+	{
+		s += word;
+	}
+	cout << s << endl;
 }
