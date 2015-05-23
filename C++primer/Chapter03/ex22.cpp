@@ -17,7 +17,7 @@ int main()
 
 	auto iter = text.begin();
 
-	for (auto it = (*iter).begin(); it != (*iter).end(); it++)
+	for (auto it = (*iter).begin(); it != (*iter).end(); ++it)
 		*it = toupper(*it);
 
 	for(; iter != text.end(); ++iter)

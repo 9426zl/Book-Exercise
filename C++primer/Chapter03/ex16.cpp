@@ -16,7 +16,7 @@ int main()
 
 	if (index != 0)
 	{
-		for (i = 0; i < index; i++)
+		for (i = 0; i < index; ++i)
 			cout << v3[i] << " ";
 	}
 	else

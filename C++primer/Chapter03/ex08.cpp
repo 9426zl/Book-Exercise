@@ -9,7 +9,7 @@ int main()
 	int i, h;
 	h = s.size();
 
-	for (i = 0; i < h; i++)
+	for (i = 0; i < h; ++i)
 		s[i] = 'X';
 	cout << s << endl;
 	return 0;
