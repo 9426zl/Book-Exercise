@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	unsigned aCnt, eCnt, iCnt, oCnt, uCnt = 0;
+	unsigned aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0;
 	char ch;
 
 	while(cin >> ch)
