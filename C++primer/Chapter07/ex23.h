@@ -1,3 +1,12 @@
+//
+// Chapter07 Exercise23
+//
+
+#ifndef ex23_h
+#define ex23_h
+
+#include <string>
+
 class Screen
 {
 public:
@@ -16,3 +25,5 @@ private:
 	pos height = 0, width = 0;
 	std::string contents;
 };
+
+#endif
