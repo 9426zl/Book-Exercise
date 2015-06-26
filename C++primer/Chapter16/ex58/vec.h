@@ -1,5 +1,5 @@
 //
-// Chapter16 Exercise16
+// Chapter16 Exercise58
 //
 
 #ifndef VEC_H
@@ -18,6 +18,7 @@ public:
 	~Vec();
 
 	void push_back(const T&);
+	template <class...Args> void emplace_back(Args&&...);
 	
 	std::size_t size() const {return first_free - elements;}
 	std::size_t capacity() const {return cap - elements;}
@@ -66,6 +67,15 @@ void Vec<T>::push_back(const T& s)
 {
 	chk_n_alloc();
 	alloc.construct(first_free++, s);
+}
+
+template<typename T>
+template<class... Args>
+inline
+void Vec<T>::emplace_back(Args&&... args)
+{
+	chk_n_alloc();
+	alloc.construct(first_free++, std::forward<Args>(args)...);
 }
 
 template<typename T>
