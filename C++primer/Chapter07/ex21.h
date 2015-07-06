@@ -2,8 +2,8 @@
 // Chapter07 Exercise21
 //
 
-#ifndef ex21_h
-#define ex21_h
+#ifndef EX21_h
+#define EX21_h
 
 #include <iostream>
 #include <string>

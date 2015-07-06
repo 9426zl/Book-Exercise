@@ -42,7 +42,7 @@ std::istream &read(std::istream &is, Sales_data &item)
 std::ostream &print(std::ostream &os, const Sales_data &item)
 {
 	os << item.isbn() << " " << item.units_sold << " "
-		<< item.revenue << " " << item.avg_price();
+		<< item.revenue ;
 	return os;
 }
 

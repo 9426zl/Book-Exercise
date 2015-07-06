@@ -2,8 +2,8 @@
 // Chapter07 Exercise32
 //
 
-#ifndef ex32_h
-#define ex32_h
+#ifndef EX32_h
+#define EX32_h
 
 #include <iostream>
 #include <string>
@@ -12,20 +12,19 @@
 class Screen;
 
 class Window_mgr{
+	
 public:
 	using ScreenIndex = std::vector<Screen>::size_type;
 	void clear(ScreenIndex);
+	
 private:
-	std::vector<Screen> screens{Screen(24, 80, ' ')};
+	std::vector<Screen> screens;
 };
-void Window_mgr::clear(ScreenIndex i)
-{
-	Screen &s = screen[i];
-	s.contents = string(s.height * s.width, ' ');
-}
+
 
 class Screen{
 	friend void Window_mgr::clear(ScreenIndex);
+
 public:
 	typedef std::string::size_type pos;
 
@@ -45,7 +44,6 @@ public:
 	const Screen& display(std::ostream &os) const 
 	{ do_display(os); return *this; }
     
-
 private:
 	void do_display(std::ostream &os) const{os << contents;}
 
@@ -65,6 +63,12 @@ inline Screen& Screen::set(char c)
 {
     contents[cursor] = c;
     return *this;
+}
+
+void Window_mgr::clear(ScreenIndex i)
+{
+	Screen &s = screens[i];
+	s.contents = std::string(s.height * s.width, ' ');
 }
 
 #endif

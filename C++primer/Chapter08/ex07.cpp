@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <fstream>
-#include "\Chapter07\ex26.h"
+#include "...\Chapter07\ex26.h"
 
 using std::ifstream; using std::ofstream; using std::cin;
 using std::cout; using std::endl; using std::cerr;

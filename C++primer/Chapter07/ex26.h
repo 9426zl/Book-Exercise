@@ -2,8 +2,8 @@
 // Chapter07 Exercise26
 //
 
-#ifndef ex26_h
-#define ex26_h
+#ifndef EX26_h
+#define EX26_h
 
 #include <iostream>
 #include <string>
@@ -24,7 +24,7 @@ public:
 	std:: string isbn() const {return bookNo; }
 	Sales_data& combine(const Sales_data&);
 
-private
+private:
 	inline double avg_price() const;
 
 private:

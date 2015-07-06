@@ -2,8 +2,8 @@
 // Chapter07 Exercise06
 //
 
-#ifndef ex06_h
-#define ex06_h
+#ifndef EX06_h
+#define EX06_h
 
 #include <iostream>
 #include <string>

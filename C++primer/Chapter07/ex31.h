@@ -2,8 +2,8 @@
 // Chapter07 Exercise31
 //
 
-#ifndef ex31_h
-#define ex31_h
+#ifndef EX31_h
+#define EX31_h
 
 class Y;
 

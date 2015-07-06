@@ -2,8 +2,8 @@
 // Chapter07 Exercise23
 //
 
-#ifndef ex23_h
-#define ex23_h
+#ifndef EX23_h
+#define EX23_h
 
 #include <string>
 

@@ -1,3 +1,7 @@
+//
+// Chapter07 Exercise13
+//
+
 #include <iostream>
 #include <string>
 
@@ -72,5 +76,7 @@ int main()
 		}
 	}
 	print(cout, total);
+	
+	return 0;
 }
 

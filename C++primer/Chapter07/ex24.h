@@ -2,8 +2,8 @@
 // Chapter07 Exercise24
 //
 
-#ifndef ex24_h
-#define ex24_h
+#ifndef EX24_h
+#define EX24_h
 
 #include <string>
 
