@@ -1,3 +1,7 @@
+//
+// Chapter09 Exercise13
+//
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -10,7 +14,7 @@ int main()
 	list<int> ilist(8, 1);
 	vector<double> dvec(8, 2.0);
 	vector<int> ivec(8, 3);
-	decltype(dvec.size()) n = 0, index = dvec.size();
+	auto n = 0, index = dvec.size();
 	
 	dvec.assign(ilist.begin(), ilist.end());
 

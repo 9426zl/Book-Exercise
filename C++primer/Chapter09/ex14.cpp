@@ -1,3 +1,7 @@
+//
+// Chapter09 Exercise14
+//
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -13,9 +17,7 @@ int main()
 	svec.assign(ilist.cbegin(), ilist.cend());
 
 	for(const auto &vec : svec)
-		cout << vec;
-
-	cout << endl;
+		cout << vec << endl;
 
 	return 0;
 }

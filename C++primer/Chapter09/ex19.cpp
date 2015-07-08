@@ -1,6 +1,5 @@
 //
-//  ex19.cpp
-//  Exercise 9.19
+//  Chapter09 Exercise19
 //
 
 #include <iostream>

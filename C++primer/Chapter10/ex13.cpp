@@ -17,13 +17,17 @@ bool judgeLength(const string &str)
 
 int main()
 {
-	vector<string> svec(10, "aaaaaa");
+	vector<string> svec{"alpha", "Beta", "Chalie", "David", "Eagle"};
 	auto send = partition(svec.begin(), svec.end(), judgeLength);
 	auto iter = svec.begin();
+    auto index = send - iter;
+    
+	cout << ((index >= 5) ? "There is more than 5 items":
+							"There is less than 5 items") << endl;
 
 	for(; iter != send; ++iter)
 		cout << *iter << " ";
 	cout << endl;
-
+	
 	return 0;
 }

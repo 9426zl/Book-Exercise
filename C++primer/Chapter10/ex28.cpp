@@ -21,6 +21,18 @@ int main()
     
     list<int> lst3;
     copy(vec.cbegin(), vec.cend(), front_inserter(lst3));
+    
+    for(auto iter1 : lst1)
+    	cout << iter1 << " ";
+    cout << endl;
+    
+    for(auto iter2 : lit2)
+    	cout << iter2 << " ";
+    cout << endl;
+    
+    for(auto iter3 : lst3)
+    	cout << iter3 << " ";
+    cout << endl;
 
 	return 0;
 }

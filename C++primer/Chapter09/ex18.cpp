@@ -1,6 +1,5 @@
 //
-//  ex18.cpp
-//  Exercise 9.18
+//  Chapter09 Exericse18
 //
 
 #include <iostream>

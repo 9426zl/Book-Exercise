@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-	vector<int> ivec(10, 1);
+	vector<int> ivec{1, 2, 3, 4, 5, 6};
 	cout << accumulate(ivec.begin(), ivec.end(), 0) << endl;
 
 	return 0;

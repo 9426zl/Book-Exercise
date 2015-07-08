@@ -1,7 +1,7 @@
 //
-//  ex16.cpp
-//  Exercise 9.16
-//
+//  Chapter09 Exercise16
+//  
+
 
 #include<iostream>
 #include<vector>

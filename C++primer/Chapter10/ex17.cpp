@@ -10,7 +10,7 @@
 
 int main()
 {
-	Sales_data s1("0001"), s2("0002"), s3("0003");
+	Sales_data s1("0001"), s2("0003"), s3("0002");
 	std::vector<Sales_data> sv{s1, s2, s3};
 
 	std::sort(sv.begin(), sv.end(), [](const Sales_data &isbn1, const Sales_data &isbn2){

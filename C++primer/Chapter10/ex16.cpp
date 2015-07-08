@@ -39,7 +39,7 @@ void biggies(vector<string> &words,
 
 int main()
 {
-	vector<string> svec(10, "aa");
+	vector<string> svec{"a", "aaaaa", "aaa", "aaaa"};
 
 	biggies(svec, 1);
 

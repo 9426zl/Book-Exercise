@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-	vector<int> ivec(10, 1);
+	vector<int> ivec{1, 2, 3, 4, 5};
 	fill_n(ivec.begin(), ivec.end(), 2);
 
 	for(auto i : ivec)

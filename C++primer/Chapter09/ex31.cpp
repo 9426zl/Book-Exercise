@@ -28,19 +28,19 @@ int main()
 	cout << endl;
 
 	forward_list<int> vfl = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-	auto iter = vfl.begin(), prev = vfl.before_begin();
+	auto iter2 = vfl.begin(), prev2 = vfl.before_begin();
 
-	while (iter != vfl.end())
+	while (iter2 != vfl.end())
 	{    
-        if (*iter % 2) {        
-            iter = vfl.insert_after(prev, *iter);   
-            advance(iter, 2);
-            advance(prev, 2);
+        if (*iter2 % 2) {        
+            iter2 = vfl.insert_after(prev2, *iter2);   
+            advance(iter2, 2);
+            advance(prev2, 2);
         } else        
-            iter = vfl.erase_after(prev);
+            iter2 = vfl.erase_after(prev2);
     }
 
-	cout << "forward_list:"
+	cout << "forward_list:";
     for (auto i : vfl)
         cout << i << " ";
 	cout << endl;    

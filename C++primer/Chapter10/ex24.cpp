@@ -9,6 +9,7 @@
 #include <functional>
 
 using namespace std;
+using std::placeholders::_1;
 
 inline bool
 check_size(const string &s, string::size_type sz)
@@ -27,10 +28,10 @@ int main()
 
 	for(auto iter : ivec)
 	{
-		if(!check(*iter))
+		if(!check(iter))
 		{
 			cout << "The first element is " 
-			<< *iter << endl;
+			<< iter << endl;
 			break;
 		}
 	}
@@ -38,7 +39,3 @@ int main()
 	return 0;
 }
 
-
-
-
-}

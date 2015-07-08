@@ -1,6 +1,5 @@
 //
-//  ex24.cpp
-//  Exercise 9.24
+//  CHapter09 Exercise24
 //
 
 #include <iostream>
@@ -10,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	vector<int> ivec;
+	vector<int> ivec{1, 2, 3, 4, 5, 6, 7};
 
 	cout << ivec.at(0) << "\n";
 	cout << ivec[0] << "\n";

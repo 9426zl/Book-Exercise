@@ -1,7 +1,5 @@
 //
-//  ex20.cpp
-//  Exercise 9.20
-//
+//  Chapter09 Exercise20
 
 #include <iostream>
 #include <list>

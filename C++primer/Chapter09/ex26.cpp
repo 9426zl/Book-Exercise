@@ -1,6 +1,5 @@
 //
-//  ex26.cpp
-//  Exercise 9.26
+//  Chapter09 Exericse26
 //
 
 #include <iostream>
