@@ -12,6 +12,8 @@ bool compareIsbn(const Sales_data &lhs, const Sales_data &rhs)
 
 int main()
 {
-	typedef bool(*compareType)(const Sales_data &lhs, const Sales_data $rhs);
+	typedef decltype(compareIsbn)* compareType;
 	std::multiset<Sales_data, compareType> bookstore(compareIsbn);
+	
+	return 0;
 }

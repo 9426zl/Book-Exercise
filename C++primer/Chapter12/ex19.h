@@ -2,8 +2,8 @@
 // Chapter12 Exercise19
 //
 
-#ifndef ex19_h
-#define ex19_h
+#ifndef EX19_H
+#define EX19_H
 
 #include <vector>
 #include <string>
@@ -22,12 +22,8 @@ public:
 	typedef vector<string>::size_type size_type;
 	friend class StrBlobPtr;
 	
-	StrBlobPtr begin() {return StrBlobPtr(*this);}
-	StrBlobPtr end()
-	{	
-		auto ret = StrBlobPtr(*this, data->size());
-		return ret;
-	}
+	StrBlobPtr begin() ;
+	StrBlobPtr end();
 
 	StrBlob():data(make_shared<vector<string>>()) { }
     StrBlob(std::initializer_list<string> il):
@@ -67,6 +63,7 @@ private:
 	shared_ptr<vector<string>> data;	
 };
 
+
 class StrBlobPtr {
 public:
 	StrBlobPtr():curr(0) { }
@@ -99,6 +96,17 @@ private:
     weak_ptr<vector<string>> wptr;
     size_t curr;
 };
+
+StrBlobPtr StrBlob::begin()
+{
+	return StrBlobPtr(*this);
+}
+
+StrBlobPtr StrBlob::end()
+{
+	auto ret = StrBlobPtr(*this, data->size());
+	return ret;
+}
 
 
 #endif

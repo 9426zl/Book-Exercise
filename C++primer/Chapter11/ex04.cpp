@@ -23,7 +23,7 @@ void word_count(map<string, size_t> &sm)
 		++sm[word];
 	}
 
-	for(const &elem : sm)
+	for(const auto &elem : sm)
 		cout << elem.first << ":" << elem.second << "\n";
 }
 

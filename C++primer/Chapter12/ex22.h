@@ -2,8 +2,8 @@
 // Chapter12 Exercise22
 //
 
-#ifndef ex22_h
-#define ex22_h
+#ifndef EX22_h
+#define EX22_H
 
 #include <vector>
 #include <string>
@@ -95,6 +95,16 @@ private:
     weak_ptr<vector<string>> wptr;
     size_t curr;
 };
+
+ConstStrBlobPtr StrBlob::begin() const 
+{
+    return ConstStrBlobPtr(*this);
+}
+ConstStrBlobPtr StrBlob::end() const 
+{
+    auto ret = ConstStrBlobPtr(*this, data->size());
+	return ret;
+}
 
 
 #endif

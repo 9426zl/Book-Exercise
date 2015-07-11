@@ -21,7 +21,7 @@ int main()
 			word_store.insert(word);
 
 	for(auto iter : word_store)
-		cout << *iter;
+		cout << iter;
 
 	return 0;
 }

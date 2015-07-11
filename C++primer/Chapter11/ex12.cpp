@@ -18,9 +18,8 @@ int main()
 	while(cin >> str >> i)
 		pvec.push_back(make_pair(str, i));
 
-	for(const auto iter : vec)
-		cout << *iter.first << *iter.second << "\n";
-	cout << endl;
+	for(const auto iter : pvec)
+		cout << iter.first << " " << iter.second << endl;
 
 	return 0;
 }

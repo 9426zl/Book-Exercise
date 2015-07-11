@@ -2,8 +2,8 @@
 // Chapter12 Exercise02
 //
 
-#ifndef ex02_h
-#define ex02_h
+#ifndef EX02_h
+#define EX02_h
 
 #include <vector>
 #include <string>
