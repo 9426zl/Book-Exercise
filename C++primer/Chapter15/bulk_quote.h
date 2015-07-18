@@ -1,5 +1,5 @@
 //
-// Chapter15 Exercise04
+// bulk_quote.h
 //
 
 #ifndef BULK_QUOTE_H
@@ -19,5 +19,13 @@ private:
 	std::size_t min_qty = 0;
 	double discount = 0.0;
 };
+
+double Bulk_quote::net_price(size_t cnt) const
+{
+	if (cnt >= min_qty)
+		return cnt * (1 - discount) * price;
+	else
+		return cnt * price;
+}
 
 #endif

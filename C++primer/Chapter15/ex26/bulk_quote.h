@@ -1,5 +1,5 @@
 //
-// Chapter15 Exercise16
+// Chapter15 Exercise26
 //
 
 #ifndef BULK_QUOTE_H

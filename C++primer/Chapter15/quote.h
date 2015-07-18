@@ -1,11 +1,11 @@
 //
-// Chapter15 Exercise03
+// quote.h
 //
 
 #ifndef QUOTE_H
 #define QUOTE_H
 
-include <string>
+#include <string>
 
 class Quote {
 public:

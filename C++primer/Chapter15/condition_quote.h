@@ -1,5 +1,5 @@
 //
-// Chapter15 Exercise07
+// condition_quote.h
 //
 
 #ifndef CONDITION_QUOTE_H

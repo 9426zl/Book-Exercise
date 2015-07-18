@@ -5,7 +5,8 @@
 #ifndef QUOTE_H
 #define QUOTE_H
 
-include <string>
+#include <string>
+#include <iostream>
 
 class Quote {
 public:
@@ -25,5 +26,12 @@ private:
 protected:
 	double price = 0.0;
 };
+
+void Quote::debug() const
+{
+	std::cout << "data member of the class is:\n"
+		      << "bookNo = " << this->bookNo << " "
+			  << "price = "  << this->price << ".\n";
+}
 
 #endif

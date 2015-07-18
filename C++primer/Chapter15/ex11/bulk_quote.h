@@ -5,6 +5,7 @@
 #ifndef BULK_QUOTE_H
 #define BULK_QUOTE_H
 
+#include <iostream>
 #include "quote.h"
 
 class Bulk_quote : public Quote {
@@ -21,5 +22,12 @@ private:
 	std::size_t min_qty = 0;
 	double discount = 0.0;
 };
+
+void Bulk_quote::debug() const
+{
+	Quote::debug();
+	std::cout << "min_qty = " << this->min_qty << " "
+		      << "discount = "<< this->discount << ".\n";
+}
 
 #endif

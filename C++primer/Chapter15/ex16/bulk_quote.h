@@ -1,5 +1,5 @@
 //
-// Chapter15 Exercise16
+// bulk_quote
 //
 
 #ifndef BULK_QUOTE_H
@@ -12,7 +12,7 @@ public:
 	Bulk_quote() = default;
 	Bulk_quote(const std::string& book, double price, 
 			   std::size_t qty, double disc):
-	Disc_quote(book, price, qty, disc) { }
+	Disc_Quote(book, price, qty, disc) { }
 
 	double net_price(std::size_t) const override;
 

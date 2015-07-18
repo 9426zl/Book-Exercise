@@ -1,10 +1,11 @@
 //
-// Chapter15 Exercise16
+// Chapter15 Exercise15
 //
 
 #ifndef DISC_QUOTE_H
 #define DISC_QUOTE_H
 
+#include <string>
 #include "quote.h"
 
 class Disc_quote : public Quote {

@@ -2,9 +2,8 @@
 // Chapter13 Exercise05
 //
 
-#ifndef ex05_h
-#define ex05_h
-
+#ifndef EX05_H
+#define EX05_H
 #include <string>
 
 class HasPtr {

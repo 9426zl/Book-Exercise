@@ -5,6 +5,7 @@
 #ifndef CONDITION_QUOTE_H
 #define CONDITION_QUOTE_H
 
+#include <iostream>
 #include "quote.h"
 
 class Condition_quote : public Quote {
@@ -25,6 +26,13 @@ private:
 	std::size_t max_qty = 0;
 	double discount = 0.0;
 };
+
+void Condition_quote::debug() const
+{
+	Quote::debug();
+    std::cout << "max_qty= " << this->max_qty << " "
+              << "discount= " << this->discount<< ".\n";
+}
 
 
 #endif

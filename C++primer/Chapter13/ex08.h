@@ -2,8 +2,8 @@
 // Chapter13 Exercise08
 //
 
-#ifndef ex08_h
-#define ex08_h
+#ifndef EX08_H
+#define EX08_H
 
 #include <string>
 

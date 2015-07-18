@@ -5,6 +5,7 @@
 #ifndef CONDITION_QUOTE_H
 #define CONDITION_QUOTE_H
 
+#include <iostream>
 #include "disc_quote.h"
 
 class Condition_quote : public Disc_quote {
@@ -22,6 +23,13 @@ public:
 	void debug() const override;
 
 };
+
+void Condition_quote::debug() const
+{
+	Quote::debug();
+    std::cout << "max_qty= " << quantity << " "
+              << "discount= " << discount<< ".\n";
+}
 
 
 #endif
