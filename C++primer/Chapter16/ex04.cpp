@@ -26,9 +26,9 @@ int main()
 
 	std::list<std::string> slist(10, "alpha");
 
-	auto result2 = find(slist.cbegin(), slist.cend(), "alpha");
+	auto result = find(slist.cbegin(), slist.cend(), "alpha");
 
-	std::cout<< *result2 << std::endl;
+	std::cout<< *result << std::endl;
 
 	return 0;
 }
